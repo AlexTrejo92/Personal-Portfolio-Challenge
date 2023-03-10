@@ -1,0 +1,23 @@
+header {
+    Display: flex;
+    background-color: blue;
+    color: antiquewhite;
+    padding: 20px;
+}
+
+nav {
+    position: relative;
+}
+
+nav li {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: red;
+    color: yellow;
+    width: 30%;
+    
+}
+
+#name::before {
+    content: "\1F4FA";
+}
