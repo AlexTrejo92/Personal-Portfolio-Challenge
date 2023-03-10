@@ -8,20 +8,78 @@
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
     <title>Personal Portfolio Alex Trejo</title>
 </head>
+
+
 <body>
-  <header>
-    <!-- Add code to header -->
-    <p> <span id="name">ALEX TV </span>  /  ARCHITECT  /  PROJECT MANAGER  /  WEB DEV</p>
+
+  <!-- This is the Header and everything related to it. Includes 2 elements inside it -->
+  <header class="header">
+
+    <h1> <span id="emoji">ALEX TV </span>  /  <span>/ARCHITECT/PROJECT MANAGER/ASPIRING WEB DEV</span></h1>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#about-me">About me</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li><a href="#Contact-Me">Contact Me</a></li><li><a>Resume</a></li>
+          </ul>
+
+        </nav>
 
   </header>  
-  <nav>
-    <!-- Add code to Navigation bar -->
+
+<!-- This is the 1st Aside section, to divide the headings from the content they will show -->
+  <aside id="#about-me" class="secondaryheader">
+    <h2 class="headings">About Me</h2>
+  </aside>
+
+      <!-- This is the About Me Section, should be a box -->
+      <div class="content">
+        <p>Architect (UNAM) with Project Management postgrad studies, experienced in Construction & Real Estate Development 
+        (all its phases), eager to apply my knowledge on a modern work environment 
+        and continue my personal and professional growth in the process. I'm currently
+        learning how to code in a Bootcamp! This page was made by me!</p>
+        </div>
+
+<!-- 2nd Aside, header for the projects section -->
+  <aside id="#projects" class="secondaryheader">
+    <h2 class="headings">Projects</h2>
+  </aside>
+
+
+<!-- Projects Section -->
+  <div class="content">
     <ul>
-        <li>About me</li>
-        <li>Projects</li>
-        <li>Contact Me</li>
-        <li>Resume</li>
+      <li id="p-1">Elena 147</li>
+      <li id="p-2">Terraza R</li>
+      <li id="p-3">Ejercicio Horiseon</li>
     </ul>
-  </nav>
+  </div>
+
+<!-- 3rd and final Section for a header -->
+  <aside id="contact-me" class="secondaryheader">
+    <h2 class="headings">Contact me</h2>
+  </aside>
+
+<div class="content">
+          <ul>
+          <li>Telefono</li>
+          <li>Email</li>
+          <li>Linkedin</li>
+          <li>Spotify</li>
+        </ul>
+</div>
+
+
+
+<!-- Footer code -->
+  <footer>
+    <p>Made by Me</p>
+  </footer>
+
 </body>
 </html>
