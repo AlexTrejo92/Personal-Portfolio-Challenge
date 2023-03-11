@@ -15,22 +15,33 @@
   <!-- This is the Header and everything related to it. Includes 2 elements inside it -->
   <header class="header">
 
-    <h1> <span id="emoji">ALEX TV </span>  /  <span>/ARCHITECT/PROJECT MANAGER/ASPIRING WEB DEV</span></h1>
+    <h1>
+      <img id="profile-pic" src="./Assets/images/foto cv1.jpg" width=120px height=120px/>
+      <p>ALEX TREJO VALENCIA</p><h3>/ARCHITECT</h3><p>/PROJECT MANAGER</p><p>/ASPIRING WEB DEV</p>
+      <!-- <span id="emoji">ALEX TREJO VALENCIA </span>  /  <span>/ARCHITECT/PROJECT MANAGER/ASPIRING WEB DEV</span> -->
+    </h1>
 
-        <nav>
-          <ul>
-            <li>
+        <nav id="navlinks">
+            <p>
               <a href="#about-me">About me</a>
-            </li>
-            <li>
+            </p>
+            <p>
               <a href="#projects">Projects</a>
-            </li>
-            <li><a href="#Contact-Me">Contact Me</a></li><li><a>Resume</a></li>
-          </ul>
-
+            </p>
+            <p>
+              <a href="#Contact-Me">Contact Me</a>
+            </p>
+            <p>
+              <a link href="https://drive.google.com/drive/folders/1FjU4LUbTorvoHMLhq7A44skuAtbQJoHt?usp=share_link">Resume</a>
+            </p>
         </nav>
 
-  </header>  
+  </header> 
+  
+  <div>
+    <img src="./Assets/images/Rendering.png" width="100%" height="auto"/>
+    <p class="imgcaption"> Project by Tadao Ando.  Rendering image by me using D5 render software.</p>
+  </div>
 
 <!-- This is the 1st Aside section, to divide the headings from the content they will show -->
   <aside id="#about-me" class="secondaryheader">
@@ -52,12 +63,17 @@
 
 
 <!-- Projects Section -->
-  <div class="content">
-    <ul>
-      <li id="p-1">Elena 147</li>
-      <li id="p-2">Terraza R</li>
-      <li id="p-3">Ejercicio Horiseon</li>
-    </ul>
+  <div class="projectdisplay">
+
+    <section>
+      <img source="./images/p1.jpg" height="auto" width="auto"/>
+      <p>Elena 147</p>
+    </section>
+
+    <section><p id="p-2">Terraza R</p></section>  
+
+    <section><p id="p-3">Ejercicio Horiseon</p></section>
+    </section>
   </div>
 
 <!-- 3rd and final Section for a header -->
@@ -65,20 +81,19 @@
     <h2 class="headings">Contact me</h2>
   </aside>
 
-<div class="content">
-          <ul>
-          <li>Telefono</li>
-          <li>Email</li>
-          <li>Linkedin</li>
-          <li>Spotify</li>
-        </ul>
+<div class="Contact-information">
+          <p id="contact-info">Telefono</p>
+          <p id="contact-info">Email</p>
+          <p id="contact-info">Linkedin</p>
+          <p id="contact-info">Spotify</p>
 </div>
 
 
 
 <!-- Footer code -->
   <footer>
-    <p>Made by Me</p>
+    <h3>Made by Me</h3>
+    <p>&copy; 2023 Carlos Alejandro Trejo Valencia</p>
   </footer>
 
 </body>
