@@ -25,10 +25,6 @@ footer{
     margin-top: 10px;
 }
 
-nav p{
-    padding: 2px;
-    justify-content: right;
-}
 /* End element selectors */
 
 
@@ -40,45 +36,45 @@ nav p{
 
 
 /* Start class selectors */
-.headings {
-    font-family: 'Bebas Neue';
-    font-size: 40px;
-    color: var(--darkblue);
-    letter-spacing: 6px;
-    padding-left: 5%;
-}
-
 .header {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 30px;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     background-image: linear-gradient(180deg, var(--blue), var(--darkblue));
     color: #FFFFFF;
     padding: 25px;
+    border-style: solid;
+    border-color: brown;
     font-size: auto;
 }
 
 .header h1 {
     height: auto;
-    display: block;
-    justify-content: flex-end;
     font-family: 'Helvetica', 'Papyrus', 'Sans serif';
     color:var(--platinum);
     text-shadow: 6px 6px 8px #8b8685;
     font-size: 1.5em;
     padding: 0px;
-    align-content: flex-start;
 }
 
-.header h2, .header p{
+.header h2 {
     font-family: 'Helvetica', 'Papyrus', 'Sans serif';
     color:var(--platinum);
     text-shadow: 6px 6px 8px #8b8685;
 }
 
-.header nav ul li{
+.navlinks li {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(20, 213, 220);
+    /* flex-direction: row;
+    justify-content: flex-end; */
+}
+
+/* .header nav ul li{
     display: block;
     align-content: flex-start;
     float:right;
@@ -94,7 +90,19 @@ nav p{
     width: 150px;
     height: 100%;
     font-size: large;
+} */
+
+.headings {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: var(--darkblue);
+    letter-spacing: 6px;
+    padding-left: 5%;
 }
+
+
+
+
 
 .secondaryheader {
     border-bottom: 2px solid var(--darkblue);
@@ -210,9 +218,6 @@ nav p{
     border-radius: 60px;
 }
 
-#navlinks {
-    background-color: crimson;
-}
 
 #p-1 {
     color: white;
@@ -282,14 +287,17 @@ nav p{
 
 
 /* Media Queries */
-@media screen and (max-width: 970px) {
-    .header,
-    .header h1,
-    .header nav ul li {
+@media screen and (max-width: 1069px) {
+    .header {
+    /* .header h1,
+    .header nav ul li { */
       flex-direction: column;
-      background-color: crimson;
       justify-content: center;
       align-items: center;
       align-content: center;
+    };
+
+    .header h2{
+        text-align: center;
     }
   }
