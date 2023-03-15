@@ -26,22 +26,24 @@
 
 
     <!-- in here, the links are not working properly although i linked the id selector -->
-    <nav class="navlinks">
-      <ul>
-      <li>
-        <a href="#about-me">About me</a>
-      </li>
-      <li>
-        <a href="#projects">Work</a>
-      </li>
-      <li>
-        <a href="#Contact-Me">Contact Me</a>
-      </li>
-      <li>
-        <a link href="https://drive.google.com/drive/folders/1FjU4LUbTorvoHMLhq7A44skuAtbQJoHt?usp=share_link">Resume</a>
-      </li>
-      </ul>
-    </nav>
+    <div class="mainnav">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a class="navlinks" href="#about-me">About me</a>
+          </li>
+          <li>
+            <a class="navlinks" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="navlinks" href="#Contact-Me">Contact Me</a>
+          </li>
+          <li>
+            <a class="navlinks" link href="https://drive.google.com/drive/folders/1FjU4LUbTorvoHMLhq7A44skuAtbQJoHt?usp=share_link">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
   </header> 
   
@@ -51,7 +53,7 @@
   </div>
 
 <!-- This is the 1st Aside section, to divide the headings from the content they will show -->
-  <aside id="#about-me" class="secondaryheader">
+  <aside id="about-me" class="secondaryheader">
     <h2 class="headings">About Me</h2>
   </aside>
 
@@ -64,8 +66,8 @@
       </div>
 
 <!-- 2nd Aside, header for the projects section -->
-  <aside id="#projects" class="secondaryheader">
-    <h2 class="headings">Work</h2>
+  <aside id="projects" class="secondaryheader">
+    <h2 class="headings">Projects</h2>
   </aside>
 
 
@@ -73,21 +75,24 @@
   <div class="projectdisplay">
 
     <section class="project1">
-      <img src="./Assets/images/p1.jpg" height="auto" width="100%"/>
-      <p id="p-1">Elena 147</p>
+      <!-- <img src="./Assets/images/p1.jpg" alt="Render image of a terrace renovation project" height="auto" width="100%"/> -->
+      <p id="p-1">Terraza Casa R / Renovation</p>
     </section>
 
+
     <section class="project2">
-      <pre id="p-2"><strong>Terraza R</strong> / Renovation</pre>
+      <p id="p-2"><strong>Elena 147</strong> / Renovation</p>
       <!-- <p id="p-2">Renovation</p> -->
     </section>  
 
-    <section><p id="p-3">Ejercicio Horiseon</p></section>
+    <section class="project3" alt="screenshot of a website">
+
+      <p id="p-3">Ejercicio Horiseon</p></section>
     </section>
   </div>
 
 <!-- 3rd and final Section for a header -->
-  <aside id="contact-me" class="secondaryheader">
+  <aside id="Contact-Me" class="secondaryheader">
     <h2 class="headings">Contact me</h2>
   </aside>
 
