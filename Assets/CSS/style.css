@@ -21,12 +21,6 @@ footer{
     line-height: 1.3em;
 }
 
-/* End element selectors */
-
-
-
-
-
 /* Start class selectors */
 .header {
     display: flex;
@@ -34,7 +28,6 @@ footer{
     flex-direction: row;
     justify-content: flex-start;
     gap: 30px;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     background-image: linear-gradient(180deg, var(--blue), var(--darkblue));
     color: #FFFFFF;
@@ -44,7 +37,7 @@ footer{
 
 .header h1 {
     height: auto;
-    font-family: 'Helvetica', 'Papyrus', 'Sans serif';
+    font-family: 'Helvetica', 'Sans serif';
     color:var(--platinum);
     text-shadow: 6px 6px 8px #8b8685;
     font-size: 35px;
@@ -52,12 +45,13 @@ footer{
 }
 
 .header h2 {
-    font-family: 'Helvetica', 'Papyrus', 'Sans serif';
+    font-family: 'Helvetica', 'Sans serif';
     color:var(--platinum);
     text-shadow: 6px 6px 8px #8b8685;
     font-size: 20px;
 }
 
+/* Following selectors were created to control the style of the navbar within the header, but to be treated as a separate element */
 .mainnav{
     flex: 1;
     display: flex;
@@ -68,7 +62,6 @@ footer{
     display: inline-block;
     list-style-type: none;
     padding: 20px;
-    color: aqua;
 }
 
 .navlinks {
@@ -82,29 +75,35 @@ footer{
     border-bottom-style: solid;
 }
 
+.navlinks:hover {
+    color: var(--platinum)
+}
+
+
+/* Class to style the caption from the background image */
+.imgcaption {
+    font-family: 'Bebas Neue', 'Helvetica', 'Sans Serif';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Class selectors to style the headings of the main content page */
+.secondaryheader {
+    border-bottom: 2px solid var(--darkblue);
+    margin: 20px 10px;
+}
+
 .headings {
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', 'Helvetica', 'sans serif';
     font-size: 40px;
     color: var(--darkblue);
     letter-spacing: 6px;
     padding-left: 5%;
 }
 
-.secondaryheader {
-    border-bottom: 2px solid var(--darkblue);
-    margin: 20px 10px;
-}
-
-.contact{
-    display: block;
-    border-style: solid;
-    border-color: aqua;
-    margin: 20px 0px 20px 10px;
-    width: 100%;
-    height: auto;
-}
-
-.content{
+.abmecontent{
     color: var(--darkblue);
     font-family: 'helvetica', 'sans serif';
     font-style: oblique;
@@ -119,27 +118,7 @@ footer{
     border-left-color: var(--blue);
 }
 
-
-/* using grid on project display */
-
-/* .projectdisplay {
-    background-color: white;
-    margin-right: 1%;
-    margin-left: 33%;
-    border-left-style: dotted;
-    border-left-color: var(--blue);
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
-    gap: 1rem;
-    grid-auto-flow: dense;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-} */
-
-
-/* using flex on project display */
-
+/* These selectors control the styling of the Work/Projects section */
 .projectdisplay{
     display: flex;
     flex-wrap: wrap;
@@ -161,22 +140,6 @@ footer{
     border: 5px solid var(--darkblue)
 }
 
-.project1:hover, .project2:hover, .project3:hover, .project4:hover {
-    opacity: .9;
-}
-
-#p-1, #p-2, #p-3, #p-4 {
-    position: absolute;
-    color: var(--darkblue);
-    background-color: var(--blue);
-    bottom: 20px;
-    left: 0px;
-    font-family: 'Bebas Neue', 'Helvetica', 'Sans Serif';
-    font-size: 1.8em;
-    line-height: 1.2em;
-    padding: 5px 1px;
-}
-
 .project2 {
     position: relative;
     background-image: url(../images/p2.jpg);
@@ -189,7 +152,6 @@ footer{
     border: 5px solid var(--darkblue);
     opacity: .7;
 }
-
 
 .project3 {
     position: relative;
@@ -217,9 +179,27 @@ footer{
     opacity: .7;
 }
 
+#p-1, #p-2, #p-3, #p-4 {
+    position: absolute;
+    color: var(--darkblue);
+    background-color: var(--blue);
+    bottom: 20px;
+    left: 0px;
+    font-family: 'Bebas Neue', 'Helvetica', 'Sans Serif';
+    font-size: 1.8em;
+    line-height: 1.2em;
+    padding: 5px 1px;
+}
+
+/* Adds styling to the images so that they have more opacity on hover */
+.project1:hover, .project2:hover, .project3:hover, .project4:hover {
+    opacity: .9;
+}
+
+
+/* Last section of the page before the footer */
 
 .contact-information{
-    /* background-color: darkorchid; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -232,188 +212,99 @@ footer{
     font-weight: bolder;
 }
 
-.imgcaption{
-    font-family: 'Bebas Neue';
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-/* End class selectors */
 
-
-
-
-
-
-
-
-
-/* Start id selectors */
+/* Specific ID selectors */
 
 #profile-pic{
     border-radius: 60px;
 }
 
 #phone, #mail, #linkedin, #github {
-    /* background-color: deeppink; */
     text-align: left;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding: 5px 5px;
-
 }
 
 #phone p, #mail a, #linkedin a, #github a{
     padding-left: 5px;
-    /* display: flex;
-    justify-content: space-between;
-    align-content: space-between; */
     text-decoration: none;
     color: var(--orange);
 }
 
-#mail:hover, #linkedin:hover, #github:hover {
+#mail a:hover, #linkedin a:hover, #github a:hover {
     cursor: pointer;
+    color: var(--blue);
 }
 
-#mail:visited, #linkedin:visited, #github:visited {
-    color: aqua;
-}
+/* Media Queries to make the desing Responsive */
 
-/* End id selectors */
-
-
-
-
-
-
-
-/* Media Queries */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1842px) {
     .header {
-    /* .header h1,
-    .header nav ul li { */
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      padding: 10px;
-    }
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          padding: 10px;
+        }
+    
+        .header h1, .header h2{
+            text-align: center;
+            align-content: center;
+        }
 
-    .header h1, .header h2{
-        text-align: center;
-        align-content: center;
-    }
+        .navbar ul li {
+            padding: 8px;
+        }
 
-    /* .navlinks ul {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    } */
+        .navlinks{
+            line-height: 1em;
+        }
+}
 
-    .mainnav{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .navbar {
-        text-align: center;
-        font-size: small;
-    }
-
-    .navbar ul li {
-        display: inline-block;
-        list-style-type: none;
-        padding: 3px;
-        color: aqua;
-    }
+@media screen and (max-width: 900px) {
 
     .navlinks {
-        font-family: 'bebas neue', 'helvetica';
-        line-height: .4em;
-        text-transform: none;
-        text-decoration: none;
-        font-size: large;
-        text-align: center;
         color: var(--blue);
     }
 
-    .content{
-        color: var(--darkblue);
-        font-family: 'helvetica', 'sans serif';
-        font-style: oblique;
-        display: flex;
-        justify-content: flex-end;
+    .abmecontent{
         margin-right: 5%;
         margin-left: 5%;
-        padding: 5px 15px;
-        height: auto;
-        line-height: 2em;
-        border-left-style: dotted;
-        border-left-color: var(--blue);
     }
 
 
     .projectdisplay{
-        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         margin-right: 5%;
         margin-left: 5%;
     }
 
-    .project2 {
-        position: relative;
+    .project2, .project3, .project4 {
         height: 300px;
         width: 100%;
     }
 
-    .project3 {
-        position: relative;
-        height: 300px;
-        width: 100%;
-    }
-
-    .project4 {
-        position:relative;
-        height: 300px;
-        width: 100%;
-    }
-
-    .contact-information{
-        /* background-color: darkorchid; */
-        display: flex;
-        flex-wrap: nowrap;
+    .contact-information {
         flex-direction: column;
-        justify-content: space-between;
-        padding: 0px 10px;
-        margin-right: 5%;
         margin-left: 5%;
-        border-left-style: dotted;
-        border-left-color: var(--blue);
-        font-weight: bolder;
     }
 
-  }
+    .imgcaption {
+        font-family: 'Bebas Neue', 'Helvetica', 'Sans Serif';
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1em;
+    }
 
-/* @media screen and (min-width: 425px) {
-    #p-1 {
-        position: relative;
-        z-index: 10;
-        bottom: 70px;
-        color: var(--darkblue);
-        border: 3px solid var(--orange);
-        height: auto;
-        width: auto;
-        padding: 10px 10px;
-        font-style: italic;
-        font-size: larger;
-        font-weight: bolder;
-    } 
-} */
+}
+
+@media screen and (max-width: 535px) {
+    .navlinks {
+        font-size: x-large;
+    }
+    .navbar {
+        text-align: center;
+    }
+}
