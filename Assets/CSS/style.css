@@ -65,7 +65,7 @@ footer{
 }
 
 .navlinks {
-    font-family: 'bebas neue', 'helvetica';
+    font-family: 'bebas neue', 'copperplate', 'helvetica', 'sans serif';
     font-size: xx-large;
     line-height: 2em;
     letter-spacing: 0.05em;
