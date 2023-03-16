@@ -18,6 +18,7 @@ footer{
     padding: 10px 0px;
     height: auto;
     margin-top: 10px;
+    line-height: 1.3em;
 }
 
 /* End element selectors */
@@ -46,7 +47,7 @@ footer{
     font-family: 'Helvetica', 'Papyrus', 'Sans serif';
     color:var(--platinum);
     text-shadow: 6px 6px 8px #8b8685;
-    font-size: 1.5em;
+    font-size: 35px;
     padding: 0px;
 }
 
@@ -54,6 +55,7 @@ footer{
     font-family: 'Helvetica', 'Papyrus', 'Sans serif';
     color:var(--platinum);
     text-shadow: 6px 6px 8px #8b8685;
+    font-size: 20px;
 }
 
 .mainnav{
@@ -73,29 +75,12 @@ footer{
     font-family: 'bebas neue', 'helvetica';
     font-size: xx-large;
     line-height: 2em;
+    letter-spacing: 0.05em;
     text-transform: none;
     text-decoration: none;
     color: var(--orange);
+    border-bottom-style: solid;
 }
-
-
-/* .header nav ul li{
-    display: block;
-    align-content: flex-start;
-    float:right;
-    flex-wrap: wrap;
-    padding-left: 20px;
-    font-weight: 300;
-    font-style: italic;
-    
-    justify-content: flex-end;
-    align-content: center;
-    background-color: blueviolet;
-    padding: 0.5lh;
-    width: 150px;
-    height: 100%;
-    font-size: large;
-} */
 
 .headings {
     font-family: 'Bebas Neue';
@@ -169,18 +154,27 @@ footer{
     background-image: url(../images/p1.jpg);
     background-position: bottom;
     background-size: cover;
-    height: 500px;
+    height: 550px;
     width: 100%;
+    opacity: .7;
     margin: 1%;
-    border: 5px solid var(--blue)
+    border: 5px solid var(--darkblue)
 }
 
-#p-1, #p-2, #p-3 {
+.project1:hover, .project2:hover, .project3:hover, .project4:hover {
+    opacity: .9;
+}
+
+#p-1, #p-2, #p-3, #p-4 {
     position: absolute;
     color: var(--darkblue);
     background-color: var(--blue);
-    bottom: 5px;
+    bottom: 20px;
     left: 0px;
+    font-family: 'Bebas Neue', 'Helvetica', 'Sans Serif';
+    font-size: 1.8em;
+    line-height: 1.2em;
+    padding: 5px 1px;
 }
 
 .project2 {
@@ -192,27 +186,10 @@ footer{
     height: 350px;
     width: 48%;
     margin: 1%;
-    border: 5px solid var(--orange);
+    border: 5px solid var(--darkblue);
+    opacity: .7;
 }
 
-/* #p-2{
-    position: absolute;
-    bottom: 10px;
-    background-color: var(--blue);
-    font-family: 'Helvetica', 'Sans Serif';
-} */
-
-/* .projects {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    margin-left: 33%;
-    border-left-style: dotted;
-    border-left-color: blue;
-    width: 100%;
-    height: 200px;
-    background-color: cyan;
-} */
 
 .project3 {
     position: relative;
@@ -223,9 +200,22 @@ footer{
     height: 350px;
     width: 48%;
     margin: 1%;
-    border: 5px solid var(--orange);
+    border: 5px solid var(--darkblue);
+    opacity: .7;
 }
 
+.project4 {
+    position: relative;
+    background-image: url(../images/p4.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 48%;
+    margin: 1%;
+    border: 5px solid var(--darkblue);
+    opacity: .7;
+}
 
 
 .contact-information{
@@ -312,7 +302,7 @@ footer{
       padding: 10px;
     }
 
-    .header h2{
+    .header h1, .header h2{
         text-align: center;
         align-content: center;
     }
@@ -386,6 +376,12 @@ footer{
 
     .project3 {
         position: relative;
+        height: 300px;
+        width: 100%;
+    }
+
+    .project4 {
+        position:relative;
         height: 300px;
         width: 100%;
     }
