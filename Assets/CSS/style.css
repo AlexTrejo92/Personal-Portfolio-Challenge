@@ -9,6 +9,7 @@
 body{
     background-color: var(--platinum);
     font-family: 'Helvetica', 'Sans Serif', 'Lucida Console';
+    width: 100%;
 }
 
 footer{
@@ -192,8 +193,23 @@ footer{
     opacity: .7;
 }
 
+.project6 {
+    position: relative;
+    background-image: url(../images/p7.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 48%;
+    margin: 1%;
+    border: 5px solid var(--darkblue);
+    opacity: .7;
+}
 
-#p-1, #p-2, #p-3, #p-4, #p-5 {
+
+
+
+#p-1, #p-2, #p-3, #p-4, #p-5, #p-6 {
     position: absolute;
     color: var(--darkblue);
     background-color: var(--blue);
@@ -206,7 +222,7 @@ footer{
 }
 
 /* Adds styling to the images so that they have more opacity on hover */
-.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover {
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover {
     opacity: .9;
 }
 
